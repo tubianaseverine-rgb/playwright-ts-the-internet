@@ -31,7 +31,13 @@ export default defineConfig({
     /* Base URL to use in actions like `await page.goto('')`. */
     baseURL: process.env.BASE_URL || 'https://the-internet.herokuapp.com',
 
-    /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
+// 📸 Prendre un screenshot uniquement si le test échoue
+    screenshot: 'only-on-failure',
+
+    // 🎥 Enregistrer une vidéo uniquement en cas d'échec
+    video: 'retain-on-failure',
+
+    // 🔍 La "Trace" est l'outil ultime de debug (rejoue le test pas à pas)
     trace: 'on-first-retry',
   },
 
