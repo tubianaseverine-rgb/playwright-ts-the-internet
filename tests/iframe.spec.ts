@@ -1,4 +1,5 @@
-import { test, expect } from '@playwright/test';
+// ajouter un expert dans import ligne 2 si on retire les commentaires
+import { test } from '@playwright/test';
 import { IframePage } from '../pages/IframePage';
 
 test.describe('Tests avec Page Object Model', () => {
