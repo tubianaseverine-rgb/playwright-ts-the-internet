@@ -16,7 +16,8 @@ export class IframePage {
     await this.page.goto('/tinymce');
   }
 
-  async writeInEditor(text: string) {
-    await this.textArea.fill(text);
-  }
+  //pb de droit sur le site - modification non possible
+  //async writeInEditor(text: string) {
+   // await this.textArea.fill(text);
+  //}
 }
